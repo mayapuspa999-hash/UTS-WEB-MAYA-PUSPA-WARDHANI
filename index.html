@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio interaktif Maya Puspa Wardhani, mahasiswa Sistem Informasi Universitas Nusantara PGRI Kediri: profil, proyek web, kalkulator estimasi biaya, dan form kontak."
+    />
+    <meta name="author" content="Maya Puspa Wardhani" />
+    <meta name="theme-color" content="#f8c8dc" />
+    <title>Maya Puspa Wardhani | Portofolio Interaktif</title>
+
+    <!-- favicon sederhana -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%93%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- CSS Framework: Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font, ikon, dan animasi scroll -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <!-- CSS kustom -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNav"
+    data-bs-root-margin="-40% 0px -55% 0px"
+    tabindex="0"
+  >
+    <a class="visually-hidden-focusable skip-link" href="#konten"
+      >Lewati ke konten utama</a
+    >
+
+    <!-- ===================== HEADER + NAVIGASI ===================== -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top shadow-sm"
+        id="mainNav"
+        aria-label="Navigasi utama"
+      >
+        <div class="container-fluid px-3 px-lg-5">
+          <a class="navbar-brand" href="#home">MAYA PUSPA WARDHANI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Buka menu navigasi"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Proyek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hobbies">Hobi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#calculator">Kalkulator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Kontak</a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <button
+                  type="button"
+                  id="tombolTema"
+                  class="btn btn-tema"
+                  aria-pressed="false"
+                  aria-label="Aktifkan mode gelap"
+                >
+                  <i
+                    class="bi bi-moon-stars-fill"
+                    id="ikonTema"
+                    aria-hidden="true"
+                  ></i>
+                  <span id="labelTema" class="ms-1 d-lg-none">Mode Gelap</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ===================== KONTEN UTAMA ===================== -->
+    <main id="konten" tabindex="-1">
+      <!-- ---------- HERO ---------- -->
+      <section class="hero py-5" id="home" aria-labelledby="judul-hero">
+        <div class="container text-center py-5 hero-content">
+          <p class="hero-sapaan mb-2">Hello, Selamat Datang</p>
+          <h1 class="display-4 hero-title mb-4" id="judul-hero">
+            Maya Puspa Wardhani
+          </h1>
+          <figure class="photo-frame">
+            <img
+              src="img/profile.jpg"
+              class="rounded-circle img-thumbnail profile-img"
+              alt="Foto profil Maya Puspa Wardhani"
+              width="600"
+              height="600"
+            />
+            <span class="sticker s1" aria-hidden="true">🍓</span>
+            <span class="sticker s2" aria-hidden="true">✨</span>
+            <span class="sticker s3" aria-hidden="true">🍵</span>
+            <span class="sticker s4" aria-hidden="true">🏐</span>
+          </figure>
+          <p class="lead mb-4">
+            Mahasiswa Sistem Informasi | Front-End Web Enthusiast
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+            <a href="#projects" class="btn btn-matcha px-4">Lihat Proyek</a>
+            <a
+              href="#contact"
+              class="btn btn-outline-light btn-outline-pink px-4"
+              >Hubungi Saya</a
+            >
+          </div>
+          <ul class="list-unstyled d-flex justify-content-center gap-3 mb-2">
+            <li>
+              <a
+                href="https://www.instagram.com/mayaapuspa__"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                aria-label="Instagram Maya"
+              >
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/mayapuspa999-hash"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                aria-label="GitHub Maya"
+              >
+                <i class="bi bi-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <svg
+          class="hero-wave"
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            class="wave-path"
+            d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"
+          />
+        </svg>
+      </section>
+
+      <!-- ---------- DASHBOARD RINGKAS ---------- -->
+      <section
+        class="dashboard-section py-4"
+        id="dashboard"
+        aria-labelledby="judul-dashboard"
+      >
+        <div class="container">
+          <h2 class="visually-hidden" id="judul-dashboard">
+            Ringkasan Dashboard
+          </h2>
+          <div class="row g-3 justify-content-center">
+            <article class="col-6 col-lg-3" data-aos="fade-up">
+              <div class="card stat-card h-100 text-center">
+                <div class="card-body">
+                  <i
+                    class="bi bi-mortarboard-fill stat-ikon"
+                    aria-hidden="true"
+                  ></i>
+                  <p class="stat-angka mb-0">3</p>
+                  <p class="stat-label mb-0">Semester</p>
+                </div>
+              </div>
+            </article>
+            <article
+              class="col-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card stat-card h-100 text-center">
+                <div class="card-body">
+                  <i
+                    class="bi bi-folder2-open stat-ikon"
+                    aria-hidden="true"
+                  ></i>
+                  <p class="stat-angka mb-0" id="statTotal">0</p>
+                  <p class="stat-label mb-0">Total Proyek</p>
+                </div>
+              </div>
+            </article>
+            <article
+              class="col-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card stat-card h-100 text-center">
+                <div class="card-body">
+                  <i class="bi bi-funnel-fill stat-ikon" aria-hidden="true"></i>
+                  <p class="stat-angka mb-0" id="statTampil">0</p>
+                  <p class="stat-label mb-0">Proyek Ditampilkan</p>
+                </div>
+              </div>
+            </article>
+            <article
+              class="col-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="card stat-card h-100 text-center">
+                <div class="card-body">
+                  <i
+                    class="bi bi-calculator-fill stat-ikon"
+                    aria-hidden="true"
+                  ></i>
+                  <p class="stat-angka stat-angka-kecil mb-0" id="statEstimasi">
+                    Rp 0
+                  </p>
+                  <p class="stat-label mb-0">Estimasi Terakhir</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- TENTANG ---------- -->
+      <section
+        id="about"
+        class="about-section py-5"
+        aria-labelledby="judul-about"
+      >
+        <div class="container py-4">
+          <h2 class="text-center section-title mb-5" id="judul-about">
+            Tentang Saya
+          </h2>
+          <div class="row g-4 justify-content-center">
+            <article class="col-lg-7" data-aos="fade-right">
+              <p>
+                Halo! Saya Maya, mahasiswa semester 3 program studi Sistem
+                Informasi di Universitas Nusantara PGRI Kediri. Saya punya rasa
+                penasaran yang tinggi terhadap teknologi, terutama di bidang
+                pengembangan web.
+              </p>
+              <p>
+                Saya berfokus pada pembuatan antarmuka digital yang tidak hanya
+                fungsional, tetapi juga estetis dan ramah pengguna. Saya percaya
+                bahwa kombinasi antara kode yang rapi dan visual yang manis
+                dapat menciptakan pengalaman web yang menyenangkan.
+              </p>
+              <p>
+                Di luar coding, saya menyukai gaya hidup aktif dan eksplorasi
+                hal-hal baru. Menjaga keseimbangan antara pekerjaan kreatif dan
+                kegiatan fisik membantu saya tetap segar dan penuh ide.
+              </p>
+
+              <h3 class="h5 mt-4 mb-3">Keahlian yang sedang saya asah</h3>
+              <ul class="list-unstyled skill-list">
+                <li class="mb-3">
+                  <div class="d-flex justify-content-between">
+                    <span>HTML5 &amp; Semantik</span><span>80%</span>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="HTML5 dan Semantik"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="mb-3">
+                  <div class="d-flex justify-content-between">
+                    <span>CSS &amp; Bootstrap</span><span>75%</span>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="CSS dan Bootstrap"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex justify-content-between">
+                    <span>JavaScript Dasar</span><span>65%</span>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="JavaScript Dasar"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 65%"></div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <aside
+              class="col-lg-5"
+              data-aos="fade-left"
+              aria-labelledby="judul-info"
+            >
+              <div class="card info-card h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-3" id="judul-info">Info Cepat</h3>
+                  <dl class="info-list mb-0">
+                    <dt>Nama Lengkap</dt>
+                    <dd>Maya Puspa Wardhani</dd>
+                    <dt>NIM</dt>
+                    <dd>2513020073</dd>
+                    <dt>Program Studi</dt>
+                    <dd>Sistem Informasi, Semester 3</dd>
+                    <dt>Kampus</dt>
+                    <dd>Universitas Nusantara PGRI Kediri</dd>
+                    <dt>Domisili</dt>
+                    <dd>Kediri, Jawa Timur</dd>
+                    <dt>Email</dt>
+                    <dd>
+                      <a href="mailto:mayapuspa999@gmail.com"
+                        >mayapuspa999@gmail.com</a
+                      >
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- PROYEK (FILTER + SEARCH) ---------- -->
+      <section
+        id="projects"
+        class="projects-section py-5"
+        aria-labelledby="judul-proyek"
+      >
+        <div class="container py-4">
+          <h2 class="text-center section-title mb-4" id="judul-proyek">
+            Karya &amp; Proyek
+          </h2>
+          <p class="text-center mb-4 section-intro">
+            Kumpulan tugas yang saya kerjakan selama kuliah. Gunakan tombol
+            kategori atau kolom pencarian untuk menyaring proyek.
+          </p>
+
+          <!-- kontrol filter dan pencarian -->
+          <div class="row g-3 align-items-center justify-content-between mb-4">
+            <div
+              class="col-lg-7 d-flex flex-wrap gap-2"
+              role="group"
+              aria-label="Filter kategori proyek"
+            >
+              <button
+                type="button"
+                class="btn btn-filter active"
+                data-filter="semua"
+                aria-pressed="true"
+              >
+                Semua
+              </button>
+              <button
+                type="button"
+                class="btn btn-filter"
+                data-filter="html"
+                aria-pressed="false"
+              >
+                HTML
+              </button>
+              <button
+                type="button"
+                class="btn btn-filter"
+                data-filter="css"
+                aria-pressed="false"
+              >
+                CSS
+              </button>
+              <button
+                type="button"
+                class="btn btn-filter"
+                data-filter="bootstrap"
+                aria-pressed="false"
+              >
+                Bootstrap
+              </button>
+              <button
+                type="button"
+                class="btn btn-filter"
+                data-filter="javascript"
+                aria-pressed="false"
+              >
+                JavaScript
+              </button>
+            </div>
+            <div class="col-lg-4">
+              <label for="cariProyek" class="visually-hidden"
+                >Cari proyek</label
+              >
+              <div class="input-group">
+                <span class="input-group-text" aria-hidden="true"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <input
+                  type="search"
+                  id="cariProyek"
+                  class="form-control"
+                  placeholder="Cari proyek..."
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+          </div>
+
+          <p
+            class="text-muted small mb-3"
+            id="infoJumlah"
+            aria-live="polite"
+          ></p>
+
+          <!-- daftar proyek -->
+          <div class="row g-4" id="daftarProyek">
+            <article
+              class="col-md-6 col-lg-4 proyek-item"
+              data-kategori="html css"
+            >
+              <div class="card portfolio-card h-100">
+                <div class="proyek-cover cover-1" aria-hidden="true">
+                  <i class="bi bi-person-vcard"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">Biodata Mahasiswa</h3>
+                  <p class="card-text">
+                    Halaman biodata dengan HTML semantik, tata letak Flexbox,
+                    media query, animasi masuk, dan variabel CSS.
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item badge badge-hobby">HTML5</li>
+                    <li class="list-inline-item badge badge-hobby">CSS3</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-md-6 col-lg-4 proyek-item"
+              data-kategori="html css"
+            >
+              <div class="card portfolio-card h-100">
+                <div class="proyek-cover cover-2" aria-hidden="true">
+                  <i class="bi bi-newspaper"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">Blog Velocians '25</h3>
+                  <p class="card-text">
+                    Halaman artikel memakai CSS eksternal: menu navigasi
+                    horizontal, banner gambar latar, dan galeri foto.
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item badge badge-hobby">HTML5</li>
+                    <li class="list-inline-item badge badge-hobby">CSS3</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-md-6 col-lg-4 proyek-item"
+              data-kategori="bootstrap"
+            >
+              <div class="card portfolio-card h-100">
+                <div class="proyek-cover cover-3" aria-hidden="true">
+                  <i class="bi bi-bootstrap"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">Web Profile Bootstrap</h3>
+                  <p class="card-text">
+                    Profil pribadi dengan Bootstrap 5: navbar, hero, grid card,
+                    form kontak, scrollspy, dan animasi AOS.
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item badge badge-hobby">
+                      Bootstrap 5
+                    </li>
+                    <li class="list-inline-item badge badge-hobby">HTML5</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-md-6 col-lg-4 proyek-item"
+              data-kategori="javascript"
+            >
+              <div class="card portfolio-card h-100">
+                <div class="proyek-cover cover-4" aria-hidden="true">
+                  <i class="bi bi-receipt"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">Kasir Sederhana</h3>
+                  <p class="card-text">
+                    Menghitung total belanja, diskon 10% untuk belanja di atas
+                    Rp 50.000, dan menampilkan struk berformat rupiah.
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item badge badge-hobby">
+                      JavaScript
+                    </li>
+                    <li class="list-inline-item badge badge-hobby">
+                      Percabangan
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-md-6 col-lg-4 proyek-item"
+              data-kategori="javascript"
+            >
+              <div class="card portfolio-card h-100">
+                <div class="proyek-cover cover-5" aria-hidden="true">
+                  <i class="bi bi-box-seam"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">Aplikasi Pendataan Barang</h3>
+                  <p class="card-text">
+                    Tambah dan hapus data barang memakai array dan manipulasi
+                    DOM, dengan skrip di file JavaScript eksternal.
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item badge badge-hobby">
+                      JavaScript
+                    </li>
+                    <li class="list-inline-item badge badge-hobby">DOM</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-md-6 col-lg-4 proyek-item"
+              data-kategori="javascript"
+            >
+              <div class="card portfolio-card h-100">
+                <div class="proyek-cover cover-6" aria-hidden="true">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h5">Latihan Object &amp; DOM</h3>
+                  <p class="card-text">
+                    Object dan constructor, serta memilih elemen dengan
+                    getElementById, querySelector, dan querySelectorAll.
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item badge badge-hobby">
+                      JavaScript
+                    </li>
+                    <li class="list-inline-item badge badge-hobby">Object</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- pesan jika tidak ada hasil -->
+          <div class="text-center py-5 d-none" id="pesanKosong">
+            <i class="bi bi-emoji-frown display-5" aria-hidden="true"></i>
+            <p class="mt-2 mb-3">
+              Tidak ada proyek yang cocok dengan pencarianmu.
+            </p>
+            <button
+              type="button"
+              class="btn btn-matcha px-4"
+              id="tombolResetFilter"
+            >
+              Reset Filter
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- HOBI ---------- -->
+      <section
+        id="hobbies"
+        class="hobbies-section py-5"
+        aria-labelledby="judul-hobi"
+      >
+        <div class="container py-4">
+          <h2 class="text-center section-title mb-5" id="judul-hobi">
+            Hobi &amp; Minat
+          </h2>
+          <div class="row g-4">
+            <article class="col-md-4" data-aos="flip-left">
+              <div class="card portfolio-card h-100">
+                <img
+                  src="img/swimming.jpg"
+                  class="card-img-top"
+                  alt="Suasana kolam renang dengan atap lengkung"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <span class="badge badge-hobby mb-3">Active Lifestyle</span>
+                  <h3 class="card-title h5">Berenang</h3>
+                  <p class="card-text">
+                    Berenang adalah cara favorit saya untuk menyegarkan pikiran
+                    dan melatih ketahanan tubuh. Sensasi berada di dalam air
+                    memberi ketenangan sekaligus energi baru setelah berjam-jam
+                    menatap layar laptop.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-4" data-aos="fade-up">
+              <div class="card portfolio-card h-100">
+                <img
+                  src="img/volleyball.jpg"
+                  class="card-img-top"
+                  alt="Foto tim voli putri sebelum bertanding"
+                  width="800"
+                  height="533"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <span class="badge badge-hobby mb-3">Team Sport</span>
+                  <h3 class="card-title h5">Voli</h3>
+                  <p class="card-text">
+                    Bermain voli mengajarkan saya arti penting kerja sama tim,
+                    komunikasi yang cepat, dan fokus pada tujuan bersama.
+                    Semangat sportif ini juga saya terapkan dalam kerja
+                    kolaborasi.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-4" data-aos="flip-left">
+              <div class="card portfolio-card h-100">
+                <img
+                  src="img/food.jpg"
+                  class="card-img-top"
+                  alt="Hidangan nasi dengan lauk dan sambal di atas meja"
+                  width="800"
+                  height="533"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <span class="badge badge-hobby mb-3"
+                    >Culinary &amp; Treats</span
+                  >
+                  <h3 class="card-title h5">Kuliner</h3>
+                  <p class="card-text">
+                    Berburu tempat kuliner estetik selalu berhasil memberikan
+                    inspirasi visual dan kebahagiaan tersendiri untuk saya.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- KALKULATOR ESTIMASI BIAYA ---------- -->
+      <section
+        id="calculator"
+        class="calculator-section py-5"
+        aria-labelledby="judul-kalkulator"
+      >
+        <div class="container py-4">
+          <h2 class="text-center section-title mb-3" id="judul-kalkulator">
+            Kalkulator Estimasi Biaya Proyek
+          </h2>
+          <p class="text-center mb-5 section-intro">
+            Simulasi biaya pembuatan website. Tarif di bawah hanya contoh untuk
+            latihan, bukan harga jasa sebenarnya.
+          </p>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-6" data-aos="fade-right">
+              <form id="formKalkulator" class="card form-card p-4" novalidate>
+                <div class="mb-3">
+                  <label for="calcJenis" class="form-label"
+                    >Jenis website</label
+                  >
+                  <select id="calcJenis" class="form-select">
+                    <option value="profil" data-harga="150000">
+                      Website Profil (Rp 150.000/hlm)
+                    </option>
+                    <option value="blog" data-harga="125000">
+                      Blog / Artikel (Rp 125.000/hlm)
+                    </option>
+                    <option value="katalog" data-harga="200000">
+                      Katalog Produk (Rp 200.000/hlm)
+                    </option>
+                    <option value="dashboard" data-harga="250000">
+                      Dashboard (Rp 250.000/hlm)
+                    </option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="calcHalaman" class="form-label"
+                    >Jumlah halaman (1-20)</label
+                  >
+                  <input
+                    type="number"
+                    id="calcHalaman"
+                    class="form-control"
+                    min="1"
+                    max="20"
+                    step="1"
+                    value="3"
+                    inputmode="numeric"
+                    aria-describedby="errorHalaman"
+                  />
+                  <div class="invalid-feedback" id="errorHalaman"></div>
+                </div>
+                <fieldset class="mb-4">
+                  <legend class="form-label fs-6">Fitur tambahan</legend>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input fitur-tambahan"
+                      type="checkbox"
+                      id="fiturResponsif"
+                      value="100000"
+                      data-nama="Tampilan responsif"
+                      checked
+                    />
+                    <label class="form-check-label" for="fiturResponsif"
+                      >Tampilan responsif (+Rp 100.000)</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input fitur-tambahan"
+                      type="checkbox"
+                      id="fiturDark"
+                      value="50000"
+                      data-nama="Mode gelap"
+                    />
+                    <label class="form-check-label" for="fiturDark"
+                      >Mode gelap (+Rp 50.000)</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input fitur-tambahan"
+                      type="checkbox"
+                      id="fiturForm"
+                      value="75000"
+                      data-nama="Form kontak + validasi"
+                    />
+                    <label class="form-check-label" for="fiturForm"
+                      >Form kontak + validasi (+Rp 75.000)</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input fitur-tambahan"
+                      type="checkbox"
+                      id="fiturAnimasi"
+                      value="50000"
+                      data-nama="Animasi scroll"
+                    />
+                    <label class="form-check-label" for="fiturAnimasi"
+                      >Animasi scroll (+Rp 50.000)</label
+                    >
+                  </div>
+                </fieldset>
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-matcha px-4">
+                    Hitung Estimasi
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-pink px-4"
+                    id="tombolResetKalkulator"
+                  >
+                    Reset
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <aside
+              class="col-lg-5"
+              data-aos="fade-left"
+              aria-labelledby="judul-hasil"
+            >
+              <div class="card hasil-card h-100">
+                <div class="card-body" aria-live="polite">
+                  <h3 class="h5 mb-3" id="judul-hasil">Rincian Estimasi</h3>
+                  <p class="text-muted" id="pesanHasil">
+                    Isi form di samping untuk melihat hasilnya.
+                  </p>
+                  <dl class="rincian-list d-none" id="rincianHasil"></dl>
+                  <p class="total-baris mb-0 d-none" id="barisTotal">
+                    <span>Total bayar</span>
+                    <output id="hasilTotal" for="calcJenis calcHalaman"
+                      >Rp 0</output
+                    >
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- KONTAK (VALIDASI FORM) ---------- -->
+      <section
+        id="contact"
+        class="contact-section py-5"
+        aria-labelledby="judul-kontak"
+      >
+        <div class="container py-4">
+          <h2 class="text-center section-title mb-5" id="judul-kontak">
+            Hubungi Saya
+          </h2>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-6" data-aos="zoom-in-up">
+              <form id="formKontak" novalidate>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama"
+                    name="nama"
+                    placeholder="Nama kamu"
+                    autocomplete="name"
+                    aria-describedby="errorNama"
+                  />
+                  <div class="invalid-feedback" id="errorNama"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="nama@email.com"
+                    autocomplete="email"
+                    aria-describedby="errorEmail"
+                  />
+                  <div class="invalid-feedback" id="errorEmail"></div>
+                </div>
+                <div class="mb-4">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    name="pesan"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Tulis pesan..."
+                    aria-describedby="errorPesan hitungPesan"
+                  ></textarea>
+                  <div class="invalid-feedback" id="errorPesan"></div>
+                  <small
+                    class="d-block text-end text-muted mt-1"
+                    id="hitungPesan"
+                    >0/500</small
+                  >
+                </div>
+                <button type="submit" class="btn btn-matcha px-4">Kirim</button>
+                <div id="hasilForm" class="mt-3" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <aside
+              class="col-lg-4"
+              data-aos="fade-left"
+              aria-labelledby="judul-info-kontak"
+            >
+              <div class="card info-card h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-3" id="judul-info-kontak">Info Kontak</h3>
+                  <address class="mb-3">
+                    <i class="bi bi-envelope-fill me-2" aria-hidden="true"></i>
+                    <a href="mailto:mayapuspa999@gmail.com"
+                      >mayapuspa999@gmail.com</a
+                    ><br />
+                    <i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i
+                    >Kediri, Jawa Timur
+                  </address>
+                  <p class="mb-0 small">
+                    Form ini memvalidasi isian di browser terlebih dahulu, lalu
+                    membuka aplikasi email untuk mengirim pesan.
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer text-center py-4">
+      <div class="container">
+        <ul class="list-unstyled d-flex justify-content-center gap-3 mb-3">
+          <li>
+            <a
+              href="https://www.instagram.com/mayaapuspa__?srtk=cDN4NmczZ256NGhp"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              aria-label="Instagram Maya"
+            >
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/mayapuspa999-hash"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              aria-label="GitHub Maya"
+            >
+              <i class="bi bi-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="mb-0">
+          &copy; <span id="tahun">2026</span> Maya Puspa Wardhani. UTS Web,
+          Sistem Informasi UNP Kediri.
+        </p>
+      </div>
+    </footer>
+
+    <!-- tombol kembali ke atas -->
+    <button
+      type="button"
+      id="toTop"
+      class="btn btn-matcha rounded-circle"
+      aria-label="Kembali ke atas"
+    >
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript: Bootstrap, AOS, lalu skrip kustom -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
